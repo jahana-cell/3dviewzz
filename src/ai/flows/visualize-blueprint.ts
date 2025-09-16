@@ -78,6 +78,10 @@ const visualizeBlueprintFlow = ai.defineFlow(
       },
     });
 
-    return {visualizationDataUri: media.url!};
+    if (!media?.url) {
+      throw new Error('Image generation failed: no media returned.');
+    }
+
+    return {visualizationDataUri: media.url};
   }
 );
