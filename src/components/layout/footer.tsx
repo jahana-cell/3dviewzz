@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t">
-        <div className="container flex max-w-7xl items-center justify-between py-4">
+        <div className="container flex max-w-7xl items-center justify-center py-4">
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} 3Dviewzz. All rights reserved.
           </p>
