@@ -91,7 +91,7 @@ export default function AiVisualizer() {
   };
 
   return (
-    <section id="visualizer" className="py-12 lg:py-24">
+    <section id="visualizer" className="py-12 lg:py-24 bg-background">
       <div className="container">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

@@ -8,7 +8,7 @@ export default function Hero() {
   const renderImage = PlaceHolderImages.find(p => p.id === 'hero-render');
 
   return (
-    <section id="hero" className="container py-12 lg:py-24">
+    <section id="hero" className="container py-12 lg:py-24 bg-background">
       <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col justify-center space-y-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
