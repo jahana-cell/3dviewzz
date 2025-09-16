@@ -39,14 +39,14 @@ export default function Process() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step) => (
-            <Card key={step.title} className="text-center">
+            <Card key={step.title} className="text-center flex flex-col">
               <CardHeader className="items-center">
                 <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10 mb-4">
                   <step.icon className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle>{step.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <p className="text-muted-foreground">{step.description}</p>
               </CardContent>
             </Card>
