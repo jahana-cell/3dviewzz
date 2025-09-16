@@ -1,7 +1,8 @@
 import type {NextConfig} from 'next';
 
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
+
 const nextConfig: NextConfig = {
-  /* config options here */
   output: 'export',
   typescript: {
     ignoreBuildErrors: true,
@@ -32,6 +33,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Add the basePath and assetPrefix for GitHub Pages deployment
+  ...(isGithubActions && {
+    basePath: '/studio',
+    assetPrefix: '/studio/',
+  }),
 };
 
 export default nextConfig;
