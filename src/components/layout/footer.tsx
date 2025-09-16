@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 
 export default function Footer() {
   return (
-    <footer id="contact" className="border-t bg-background">
-      <div className="container grid max-w-7xl grid-cols-1 gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
+    <footer id="contact" className="border-t bg-background w-full">
+      <div className="container grid max-w-7xl grid-cols-1 gap-8 px-4 py-12 md:grid-cols-3 md:px-6 mx-auto">
         <div className="flex flex-col items-start gap-4">
           <Logo />
           <p className="text-muted-foreground">
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t">
-        <div className="container flex max-w-7xl items-center justify-center py-4">
+        <div className="container flex max-w-7xl items-center justify-center py-4 mx-auto">
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} 3Dviewzz. All rights reserved.
           </p>
