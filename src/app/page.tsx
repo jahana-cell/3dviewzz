@@ -9,9 +9,9 @@ import Loyalty from '@/components/sections/loyalty';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen bg-background items-center">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow w-full">
         <Hero />
         <Portfolio />
         <Services />
