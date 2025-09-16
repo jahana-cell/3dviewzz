@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-blueprint",
+      "description": "2D architectural blueprint",
+      "imageUrl": "https://picsum.photos/seed/bp1/800/600",
+      "imageHint": "blueprint drawing"
+    },
+    {
+      "id": "hero-render",
+      "description": "3D render of a modern house",
+      "imageUrl": "https://picsum.photos/seed/render1/800/600",
+      "imageHint": "modern house"
+    },
+    {
+      "id": "portfolio-res-1",
+      "description": "Luxury residential villa 3D render",
+      "imageUrl": "https://picsum.photos/seed/res1/600/400",
+      "imageHint": "luxury villa"
+    },
+    {
+      "id": "portfolio-res-2",
+      "description": "Modern apartment interior render",
+      "imageUrl": "https://picsum.photos/seed/res2/600/400",
+      "imageHint": "apartment interior"
+    },
+    {
+      "id": "portfolio-com-1",
+      "description": "Commercial office building exterior render",
+      "imageUrl": "https://picsum.photos/seed/com1/600/400",
+      "imageHint": "office building"
+    },
+    {
+      "id": "portfolio-com-2",
+      "description": "Retail store interior visualization",
+      "imageUrl": "https://picsum.photos/seed/com2/600/400",
+      "imageHint": "retail store"
+    },
+    {
+      "id": "portfolio-mix-1",
+      "description": "Mixed-use development concept art",
+      "imageUrl": "https://picsum.photos/seed/mix1/600/400",
+      "imageHint": "modern city"
+    },
+    {
+      "id": "portfolio-mix-2",
+      "description": "Urban plaza and building complex render",
+      "imageUrl": "https://picsum.photos/seed/mix2/600/400",
+      "imageHint": "urban plaza"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Avatar for a client testimonial",
+      "imageUrl": "https://picsum.photos/seed/avatar1/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Avatar for a client testimonial",
+      "imageUrl": "https://picsum.photos/seed/avatar2/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Avatar for a client testimonial",
+      "imageUrl": "https://picsum.photos/seed/avatar3/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "default-blueprint",
+      "description": "A default blueprint image for the AI visualizer",
+      "imageUrl": "https://picsum.photos/seed/bp-default/512/512",
+      "imageHint": "blueprint"
+    }
+  ]
 }
