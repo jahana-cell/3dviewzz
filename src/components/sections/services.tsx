@@ -6,27 +6,39 @@ import { Check } from 'lucide-react';
 
 const packages = [
   {
-    name: "Starter",
-    description: "Ideal for initial concepts and small projects.",
-    price: "$499",
-    features: ["5 Basic Still Renders", "2 Revision Rounds", "Standard Delivery"],
-    cta: "Choose Starter"
+    name: 'As-Built',
+    description: 'For documenting existing conditions.',
+    price: 'Contact Us',
+    features: ['Site Plan (non-Surveyed)', '2D Floor Plan'],
+    cta: 'Get a Quote',
   },
   {
-    name: "Professional",
-    description: "The most popular choice for marketing and client presentations.",
-    price: "$1,299",
-    features: ["10 High-Quality Renders", "30s Animation", "4 Revision Rounds", "Priority Support"],
+    name: 'Silver',
+    description: 'Perfect for basic design proposals.',
+    price: 'Contact Us',
+    features: ['2D New Floor Plan', 'Elevations'],
     isPopular: true,
-    cta: "Choose Professional"
+    cta: 'Get a Quote',
   },
   {
-    name: "Premium",
-    description: "For immersive experiences and large-scale developments.",
-    price: "$2,999",
-    features: ["20 Photorealistic Renders", "60s Video Walkthrough", "Interactive 360° VR Tour", "Unlimited Revisions"],
-    cta: "Choose Premium"
-  }
+    name: 'Gold',
+    description: 'For a complete 2D and 3D design picture.',
+    price: 'Contact Us',
+    features: ['2D New Floor Plan', 'Elevations', '3D Perspectives'],
+    cta: 'Get a Quote',
+  },
+  {
+    name: 'Platinum',
+    description: 'The ultimate package for immersive visualization.',
+    price: 'Contact Us',
+    features: [
+      '2D New Floor Plan',
+      'Elevations',
+      '3D Perspectives',
+      '3D Walkthrough',
+    ],
+    cta: 'Get a Quote',
+  },
 ];
 
 export default function Services() {
@@ -42,7 +54,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
             {packages.map(pkg => (
                 <Card key={pkg.name} className={`flex flex-col ${pkg.isPopular ? 'border-primary ring-2 ring-primary' : ''}`}>
                     {pkg.isPopular && <div className="bg-primary text-primary-foreground text-center py-1.5 text-sm font-semibold rounded-t-lg">Most Popular</div>}
