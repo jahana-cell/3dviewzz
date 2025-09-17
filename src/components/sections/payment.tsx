@@ -46,7 +46,7 @@ export default function Payment() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-sm mx-auto md:max-w-none">
           {paymentTiers.map(tier => (
             <Card key={tier.name} className={`flex flex-col ${tier.isPopular ? 'border-primary ring-2 ring-primary' : ''}`}>
               {tier.isPopular && (
