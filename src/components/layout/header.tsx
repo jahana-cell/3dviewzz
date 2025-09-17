@@ -4,6 +4,7 @@ import Logo from '@/components/logo';
 const navLinks = [
   { href: '#portfolio', label: 'Portfolio' },
   { href: '#services', label: 'Services' },
+  { href: '#payment', label: 'Pricing' },
   { href: '#testimonials', label: 'Testimonials' },
   { href: '#contact', label: 'Contact' },
 ];

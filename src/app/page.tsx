@@ -6,6 +6,7 @@ import Services from '@/components/sections/services';
 import Testimonials from '@/components/sections/testimonials';
 import Process from '@/components/sections/process';
 import Loyalty from '@/components/sections/loyalty';
+import Payment from '@/components/sections/payment';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <Portfolio />
         <Services />
+        <Payment />
         <Testimonials />
         <Process />
         <Loyalty />

@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'ArchViz Funnel | 3Dviewzz',
+  title: '3Dviewzz',
   description:
     'Turn your blueprints into stunning 3D visualizations. The new standard for real estate and architecture marketing.',
 };
