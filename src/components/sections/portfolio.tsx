@@ -5,27 +5,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { allPortfolioItems } from '@/lib/portfolio-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
 
-const portfolioItems = [
-  { id: 'portfolio-res-1', category: 'Residential', title: 'Luxury Coastal Villa' },
-  { id: 'portfolio-com-1', category: 'Commercial', title: 'Downtown Office Tower' },
-  { id: 'portfolio-mix-1', category: 'Mixed-use', title: 'Urban Living Complex' },
-  { id: 'portfolio-res-2', category: 'Residential', title: 'Minimalist Apartment' },
-  { id: 'portfolio-com-2', category: 'Commercial', title: 'Modern Retail Space' },
-  { id: 'portfolio-mix-2', category: 'Mixed-use', title: 'Community Plaza' },
-];
+const portfolioItems = allPortfolioItems.slice(0, 6);
 
 const categories = ['All', 'Residential', 'Commercial', 'Mixed-use'];
 
 export default function Portfolio() {
   const [filter, setFilter] = useState('All');
 
-  const filteredItems = portfolioItems.filter(
-    (item) => filter === 'All' || item.category === filter
-  );
+  const filteredItems =
+    filter === 'All'
+      ? portfolioItems
+      : portfolioItems.filter((item) => item.category === filter);
 
   return (
     <section id="portfolio" className="bg-muted/50 py-12 lg:py-24">
