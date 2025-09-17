@@ -1,5 +1,11 @@
+'use client';
+
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import Logo from '@/components/logo';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Menu } from 'lucide-react';
+import Link from 'next/link';
 
 const navLinks = [
   { href: '#portfolio', label: 'Portfolio' },
@@ -10,6 +16,8 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center justify-between mx-auto">
@@ -26,7 +34,33 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <Button>Get Your Custom Quote</Button>
+          <Button className="hidden sm:flex">Get Your Custom Quote</Button>
+          <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" className="md:hidden">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open navigation menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <div className="flex flex-col space-y-4">
+                <Logo />
+                <nav className="flex flex-col space-y-2">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="text-lg py-2 transition-colors hover:text-primary"
+                      onClick={() => setIsSheetOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </nav>
+                <Button>Get Your Custom Quote</Button>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
