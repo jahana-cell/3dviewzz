@@ -117,11 +117,11 @@ export default function Services() {
                 </div>
                  <div>
                     <h3 className="font-semibold mb-4">2. What features do you need?</h3>
-                    <RadioGroup value={featureLevel} onValueChange={setFeatureLevel} className="gap-3" disabled={projectType === 'existing'}>
+                    <RadioGroup value={featureLevel} onValueChange={setFeatureLevel} className="gap-3">
                         {featureLevels.map(level => (
                          <div key={level.id} className="flex items-center space-x-2">
-                            <RadioGroupItem value={level.id} id={`feature-${level.id}`} />
-                            <Label htmlFor={`feature-${level.id}`}>{level.label}</Label>
+                            <RadioGroupItem value={level.id} id={`feature-${level.id}`} disabled={projectType === 'existing'} />
+                            <Label htmlFor={`feature-${level.id}`} className={cn(projectType === 'existing' && 'text-muted-foreground/50')}>{level.label}</Label>
                         </div>
                        ))}
                     </RadioGroup>
