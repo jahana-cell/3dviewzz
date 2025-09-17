@@ -35,8 +35,8 @@ const nextConfig: NextConfig = {
   },
   // Add the basePath and assetPrefix for GitHub Pages deployment
   ...(isGithubActions && {
-    basePath: '/studio',
-    assetPrefix: '/studio/',
+    basePath: '/3dviewzz',
+    assetPrefix: '/3dviewzz/',
   }),
 };
 
