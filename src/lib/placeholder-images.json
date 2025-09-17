@@ -56,9 +56,9 @@
     },
     {
       "id": "portfolio-com-4",
-      "description": "Restaurant interior dining area",
-      "imageUrl": "https://picsum.photos/seed/com4/600/400",
-      "imageHint": "restaurant interior"
+      "description": "Modern retail interior",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/3D%20viewzz%2Fretail%2002.png?alt=media&token=7b2bc328-4d92-4137-8483-04f847e70c00",
+      "imageHint": "retail interior"
     },
     {
       "id": "portfolio-mix-1",
