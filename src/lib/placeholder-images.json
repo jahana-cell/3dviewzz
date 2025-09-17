@@ -25,6 +25,18 @@
       "imageHint": "apartment interior"
     },
     {
+      "id": "portfolio-res-3",
+      "description": "Suburban family home exterior",
+      "imageUrl": "https://picsum.photos/seed/res3/600/400",
+      "imageHint": "suburban home"
+    },
+    {
+      "id": "portfolio-res-4",
+      "description": "Cozy cabin in the woods",
+      "imageUrl": "https://picsum.photos/seed/res4/600/400",
+      "imageHint": "forest cabin"
+    },
+    {
       "id": "portfolio-com-1",
       "description": "Commercial office building exterior render",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/3D%20viewzz%2Fdown%20town%20tower.png?alt=media&token=b613d729-25cd-4e90-87cf-3f814932ac5c",
@@ -37,6 +49,18 @@
       "imageHint": "retail store"
     },
     {
+      "id": "portfolio-com-3",
+      "description": "Modern university campus building",
+      "imageUrl": "https://picsum.photos/seed/com3/600/400",
+      "imageHint": "university building"
+    },
+    {
+      "id": "portfolio-com-4",
+      "description": "Restaurant interior dining area",
+      "imageUrl": "https://picsum.photos/seed/com4/600/400",
+      "imageHint": "restaurant interior"
+    },
+    {
       "id": "portfolio-mix-1",
       "description": "Mixed-use development concept art",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/3D%20viewzz%2Furban%20living%20complex.png?alt=media&token=c71f9b6a-3f96-4869-bced-2667a94012d1",
@@ -47,6 +71,18 @@
       "description": "Urban plaza and building complex render",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/3D%20viewzz%2Fcommunity%20plaza.png?alt=media&token=bee0372c-4c57-467b-ae55-c04d66c6d00f",
       "imageHint": "urban plaza"
+    },
+    {
+      "id": "portfolio-mix-3",
+      "description": "Waterfront development with residential and commercial spaces",
+      "imageUrl": "https://picsum.photos/seed/mix3/600/400",
+      "imageHint": "waterfront city"
+    },
+    {
+      "id": "portfolio-mix-4",
+      "description": "Historic building renovation with modern extension",
+      "imageUrl": "https://picsum.photos/seed/mix4/600/400",
+      "imageHint": "building renovation"
     },
     {
       "id": "testimonial-avatar-1",

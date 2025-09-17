@@ -2,40 +2,47 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
-import { ArrowRight } from 'lucide-react';
+import Header from '@/components/layout/header';
+import Footer from '@/components/layout/footer';
 
-const portfolioItems = [
+const allPortfolioItems = [
   { id: 'portfolio-res-1', category: 'Residential', title: 'Luxury Coastal Villa' },
-  { id: 'portfolio-com-1', category: 'Commercial', title: 'Downtown Office Tower' },
-  { id: 'portfolio-mix-1', category: 'Mixed-use', title: 'Urban Living Complex' },
   { id: 'portfolio-res-2', category: 'Residential', title: 'Minimalist Apartment' },
+  { id: 'portfolio-res-3', category: 'Residential', title: 'Suburban Family Home' },
+  { id: 'portfolio-res-4', category: 'Residential', title: 'Cozy Cabin in the Woods' },
+  { id: 'portfolio-com-1', category: 'Commercial', title: 'Downtown Office Tower' },
   { id: 'portfolio-com-2', category: 'Commercial', title: 'Modern Retail Space' },
+  { id: 'portfolio-com-3', category: 'Commercial', title: 'Modern University Campus' },
+  { id: 'portfolio-com-4', category: 'Commercial', title: 'Restaurant Interior' },
+  { id: 'portfolio-mix-1', category: 'Mixed-use', title: 'Urban Living Complex' },
   { id: 'portfolio-mix-2', category: 'Mixed-use', title: 'Community Plaza' },
+  { id: 'portfolio-mix-3', category: 'Mixed-use', title: 'Waterfront Development' },
+  { id: 'portfolio-mix-4', category: 'Mixed-use', title: 'Historic Building Renovation' },
 ];
 
 const categories = ['All', 'Residential', 'Commercial', 'Mixed-use'];
 
-export default function Portfolio() {
+export default function PortfolioPage() {
   const [filter, setFilter] = useState('All');
 
-  const filteredItems = portfolioItems.filter(
+  const filteredItems = allPortfolioItems.filter(
     (item) => filter === 'All' || item.category === filter
   );
 
   return (
-    <section id="portfolio" className="bg-muted/50 py-12 lg:py-24">
-      <div className="container">
+    <div className="flex flex-col min-h-screen bg-background">
+      <Header />
+      <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Our Portfolio Showcase
-          </h2>
-          <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-            Explore a selection of our projects, from stunning residential homes to groundbreaking commercial spaces.
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+            Our Full Portfolio
+          </h1>
+          <p className="max-w-[800px] text-muted-foreground md:text-xl/relaxed">
+            Browse our extensive collection of 3D visualizations, spanning residential, commercial, and mixed-use projects.
           </p>
         </div>
 
@@ -83,15 +90,8 @@ export default function Portfolio() {
             );
           })}
         </div>
-        
-        <div className="text-center mt-12">
-            <Button size="lg" variant="outline" asChild>
-                <Link href="/portfolio">
-                    View Full Portfolio <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-            </Button>
-        </div>
-      </div>
-    </section>
+      </main>
+      <Footer />
+    </div>
   );
 }
