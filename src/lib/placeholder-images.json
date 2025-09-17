@@ -51,12 +51,12 @@
     {
       "id": "portfolio-com-3",
       "description": "Modern university campus building",
-      "imageUrl": "https://picsum.photos/seed/com3/600/400",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/3D%20viewzz%2Fmodern%20university%20campus%20building..png?alt=media&token=a829618c-b7d0-4145-9266-5522a9dca032",
       "imageHint": "university building"
     },
     {
       "id": "portfolio-com-4",
-      "description": "Modern retail interior",
+      "description": "Modern Retail Interior",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/3D%20viewzz%2Fretail%2002.png?alt=media&token=7b2bc328-4d92-4137-8483-04f847e70c00",
       "imageHint": "retail interior"
     },
