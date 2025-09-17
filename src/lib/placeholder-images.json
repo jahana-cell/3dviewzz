@@ -25,10 +25,10 @@
       "imageHint": "apartment interior"
     },
     {
-      "id": "portfolio-res-3",
-      "description": "Suburban family home exterior",
-      "imageUrl": "https://picsum.photos/seed/res3/600/400",
-      "imageHint": "suburban home"
+      "id": "portfolio-mix-1",
+      "description": "Urban Living Complex",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/3D%20viewzz%2Furban%20complex.png?alt=media&token=982d8941-2c06-40c3-93b4-b8a77dff0495",
+      "imageHint": "urban complex"
     },
     {
       "id": "portfolio-res-4",
@@ -59,12 +59,6 @@
       "description": "Modern retail interior",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/3D%20viewzz%2Fretail%2002.png?alt=media&token=7b2bc328-4d92-4137-8483-04f847e70c00",
       "imageHint": "retail interior"
-    },
-    {
-      "id": "portfolio-mix-1",
-      "description": "Mixed-use development concept art",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/3D%20viewzz%2Furban%20living%20complex.png?alt=media&token=c71f9b6a-3f96-4869-bced-2667a94012d1",
-      "imageHint": "modern city"
     },
     {
       "id": "portfolio-mix-2",
