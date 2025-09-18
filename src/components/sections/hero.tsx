@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col justify-center space-y-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
-            Turn Your Buildings Into Precise Documentation — Ready for Remodel
+            Turn Your Buildings Into <span className="text-primary">Precise Documentation</span> — Ready for Remodel
           </h1>
           <p className="max-w-[600px] text-muted-foreground md:text-xl">
             See your project before it’s built. 3Dviewzz is the go-to visualization partner for architects, developers, and real estate professionals.
