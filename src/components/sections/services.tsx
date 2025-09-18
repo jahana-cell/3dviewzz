@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils';
 const packages = [
   {
     name: 'As-Built',
-    description: 'For documenting existing conditions.',
+    description: 'Turn Your Buildings Into Precise Documentation — Ready for Remodel',
     price: 'Contact Us',
     features: ['Site Plan (non-Surveyed)', '2D Floor Plan'],
     cta: 'Get a Quote',
