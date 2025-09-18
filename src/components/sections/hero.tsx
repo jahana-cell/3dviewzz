@@ -71,7 +71,7 @@ export default function Hero() {
               onClick={() => setShowAfter(false)}
               className="rounded-full px-4 py-1 h-auto"
             >
-              Before
+              Initial Concept
             </Button>
             <Button
               size="sm"
@@ -79,7 +79,7 @@ export default function Hero() {
               onClick={() => setShowAfter(true)}
               className="rounded-full px-4 py-1 h-auto"
             >
-              After
+              Final Vision
             </Button>
           </div>
         </div>
