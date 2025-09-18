@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col justify-center space-y-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
-            Turn Your Buildings Into <span className="text-primary">Precise Documentation</span> — Ready for Remodel
+            From Existing Spaces to New Designs — Precise Documentation & Visualization for Build or Remodel
           </h1>
           <p className="max-w-[600px] text-muted-foreground md:text-xl">
             We create precise As-Built drawings for remodels and upgrades, and design entirely new projects from the ground up. Our high-quality 3D visualizations bring every space and plan to life, letting you see, refine, and plan with confidence. Accurate documentation, detailed plans, and immersive visuals — everything you need to execute your project with clarity and precision.
