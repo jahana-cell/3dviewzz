@@ -21,7 +21,7 @@ export default function Hero() {
             Turn Your Buildings Into <span className="text-primary">Precise Documentation</span> — Ready for Remodel
           </h1>
           <p className="max-w-[600px] text-muted-foreground md:text-xl">
-            We capture every detail of your existing space and deliver precise, field-verified drawings — giving you the clarity and confidence to plan, renovate, or remodel without costly surprises.
+            We turn existing spaces into precise As-Built drawings, perfect for remodels, renovations, or upgrades, while also crafting entirely new designs from the ground up. What sets us apart is our high-quality 3D visualization for both As-Built and new projects, allowing you to explore your space and design in realistic detail. With accurate documentation, detailed plans, and immersive visuals, we help you plan, refine, and execute your project with confidence, clarity, and precision.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button size="lg">
