@@ -1,9 +1,15 @@
+
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Download } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { cn } from '@/lib/utils';
 
 export default function Hero() {
+  const [showAfter, setShowAfter] = useState(false);
   const blueprintImage = PlaceHolderImages.find(p => p.id === 'hero-blueprint');
   const renderImage = PlaceHolderImages.find(p => p.id === 'hero-render');
 
@@ -31,7 +37,7 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-        <div className="relative group">
+        <div className="relative">
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-lg">
             {blueprintImage && (
               <Image
@@ -39,7 +45,10 @@ export default function Hero() {
                 alt={blueprintImage.description}
                 width={800}
                 height={600}
-                className="object-cover transition-opacity duration-500 group-hover:opacity-0"
+                className={cn(
+                  "object-cover transition-opacity duration-500",
+                  showAfter ? "opacity-0" : "opacity-100"
+                )}
                 data-ai-hint={blueprintImage.imageHint}
               />
             )}
@@ -48,14 +57,31 @@ export default function Hero() {
                 src={renderImage.imageUrl}
                 alt={renderImage.description}
                 fill
-                className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                className={cn(
+                  "object-cover transition-opacity duration-500",
+                  showAfter ? "opacity-100" : "opacity-0"
+                )}
                 data-ai-hint={renderImage.imageHint}
               />
             )}
           </div>
           <div className="absolute top-4 right-4 flex gap-2 text-sm font-medium">
-            <div className="rounded-full bg-background/80 px-3 py-1 backdrop-blur-sm transition-all group-hover:bg-accent group-hover:text-accent-foreground">Before</div>
-            <div className="rounded-full bg-accent/80 text-accent-foreground px-3 py-1 backdrop-blur-sm transition-all group-hover:bg-background group-hover:text-foreground">After</div>
+            <Button
+              size="sm"
+              variant={!showAfter ? 'default' : 'secondary'}
+              onClick={() => setShowAfter(false)}
+              className="rounded-full px-4 py-1 h-auto"
+            >
+              Before
+            </Button>
+            <Button
+              size="sm"
+              variant={showAfter ? 'default' : 'secondary'}
+              onClick={() => setShowAfter(true)}
+              className="rounded-full px-4 py-1 h-auto"
+            >
+              After
+            </Button>
           </div>
         </div>
       </div>
