@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-blueprint",
-      "description": "2D architectural blueprint",
-      "imageUrl": "https://picsum.photos/seed/bp1/800/600",
-      "imageHint": "blueprint drawing"
+      "description": "Architectural sketch",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7588806271-6db5e.firebasestorage.app/o/Logo%2FSketch.jpg?alt=media&token=9fd5de64-629d-4724-a6d0-a31b48fa57ac",
+      "imageHint": "architectural sketch"
     },
     {
       "id": "hero-render",
