@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Twitter, Phone, Mail } from 'lucide-react';
 import Logo from '@/components/logo';
 import { Button } from '@/components/ui/button';
 
@@ -37,12 +37,20 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="mb-2 font-semibold">Company</h3>
+            <h3 className="mb-2 font-semibold">Contact</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-primary">About Us</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary">Blog</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary">Careers</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary">Contact</a></li>
+              <li>
+                <a href="tel:+12144736888" className="text-muted-foreground hover:text-primary flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  <span>(+1) 214-473-6888</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:3dviewzz@gmail.com" className="text-muted-foreground hover:text-primary flex items-center gap-2">
+                  <Mail className="h-4 w-4" />
+                  <span>3dviewzz@gmail.com</span>
+                </a>
+              </li>
             </ul>
           </div>
           <div>
