@@ -21,7 +21,7 @@ export default function Hero() {
             Turn Your Buildings Into <span className="text-primary">Precise Documentation</span> — Ready for Remodel
           </h1>
           <p className="max-w-[600px] text-muted-foreground md:text-xl">
-            See your project before it’s built. 3Dviewzz is the go-to visualization partner for architects, developers, and real estate professionals.
+            We capture every detail of your existing space and deliver precise, field-verified drawings — giving you the clarity and confidence to plan, renovate, or remodel without costly surprises.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button size="lg">
