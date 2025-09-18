@@ -34,7 +34,9 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <Button className="hidden sm:flex">Get Your Custom Quote</Button>
+          <Button className="hidden sm:flex" asChild>
+            <a href="mailto:3dviewzz@gmail.com">Get Your Custom Quote</a>
+          </Button>
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -57,7 +59,9 @@ export default function Header() {
                     </Link>
                   ))}
                 </nav>
-                <Button>Get Your Custom Quote</Button>
+                <Button asChild>
+                  <a href="mailto:3dviewzz@gmail.com">Get Your Custom Quote</a>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>

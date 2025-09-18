@@ -53,7 +53,9 @@ export default function Process() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <Button size="lg">Start Your Project Today</Button>
+          <Button size="lg" asChild>
+            <a href="mailto:3dviewzz@gmail.com">Start Your Project Today</a>
+          </Button>
         </div>
       </div>
     </section>

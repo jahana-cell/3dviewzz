@@ -158,14 +158,16 @@ export default function Services() {
                         </ul>
                     </CardContent>
                     <CardFooter>
-                        <Button className="w-full" variant={isRecommended ? 'default' : 'outline'}>{pkg.cta}</Button>
+                        <Button className="w-full" variant={isRecommended ? 'default' : 'outline'} asChild>
+                           <a href="mailto:3dviewzz@gmail.com">{pkg.cta}</a>
+                        </Button>
                     </CardFooter>
                 </Card>
             )})}
         </div>
 
         <div className="text-center mt-12 text-muted-foreground">
-          <p>Need something different? <a href="#contact" className="font-semibold text-primary hover:underline">Book a free consultation</a> for a custom quote.</p>
+          <p>Need something different? <a href="mailto:3dviewzz@gmail.com" className="font-semibold text-primary hover:underline">Book a free consultation</a> for a custom quote.</p>
         </div>
       </div>
     </section>

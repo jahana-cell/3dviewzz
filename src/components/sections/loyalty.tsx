@@ -47,8 +47,12 @@ export default function Loyalty() {
                 <h3 className="text-2xl font-bold">Ready to Grow Together?</h3>
                 <p className="text-muted-foreground">Join our community of forward-thinking clients and let's create stunning visualizations.</p>
                 <div className="flex gap-4 mt-4">
-                    <Button>Refer & Earn</Button>
-                    <Button variant="outline">Explore Perks</Button>
+                    <Button asChild>
+                      <a href="mailto:3dviewzz@gmail.com">Refer & Earn</a>
+                    </Button>
+                    <Button variant="outline" asChild>
+                      <a href="#payment">Explore Perks</a>
+                    </Button>
                 </div>
             </div>
         </div>
